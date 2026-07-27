@@ -59,7 +59,9 @@ int main(int argc, char *argv[]) {
 
     if (month != 0)
     {
-     PrintMonthStatistic(info, count, info[0].year, month);
+        printf("%-6s %-8s %-10s %-10s %-10s\n", "Year", "Month","MonthAvg", "MonthMin","MonthMax");
+        printf("-------------------------------------------------\n");
+        PrintMonthStatistic(info, count, info[0].year, month);
     }
     else
     {
